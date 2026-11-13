@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourabh Portfolio</title>
+    
+    <!-- Google Fonts (fallback) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <div class="portfolio-card">
+        <div class="top-bar"></div>
+
+        <!-- ============ FIXED RIGHT SIDE ICONS ============ -->
+        <div class="social-icons-side">
+            <a href="#" title="Home" onclick="showHome()"><i class="fas fa-home"></i></a>
+            <a href="#" title="About" onclick="showInnerPage('about')"><i class="fas fa-user"></i></a>
+            <a href="#" title="Education" onclick="showInnerPage('education')"><i class="fas fa-graduation-cap"></i></a>
+            <a href="#" title="Projects" onclick="showInnerPage('projects')"><i class="fas fa-code"></i></a>
+            <a href="#" title="Contact" onclick="showInnerPage('contact')"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <div class="main-container">
+
+            <!-- ============ HOME SECTION ============ -->
+            <div id="home-section" class="home-section">
+
+                <div class="home-content-wrapper">
+                    <main class="main-content">
+                        <div class="text-content">
+                            <h1>I'm <span>Sourabh</span></h1>
+                            <span class="subtitle">Print Design / Photographer</span>
+                            <span class="subtitle-2">Ready to handle your new project</span>
+                            
+                            <p class="description">
+                                Hi, I'm Sourabh Diwakar, a BCA student of Star Infotech College with expertise in Python and JavaScript. I'm passionate about developing innovative solutions and collaborating on exciting projects.
+                            </p>
+
+                            <div class="home-buttons">
+                                <button class="btn-about" onclick="showInnerPage('about')">More About Me</button>
+                                <a href="resume.pdf" download class="btn-cv">
+                                    <i class="fas fa-download"></i> Download CV
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="image-section">
+                            <div class="arc-curve"></div>
+                            
+                            <img src="./img/me2.jpeg" alt="Sourabh" class="home-img-circle">
+                        </div>
+                    </main>
+                </div>
+            </div>
+
+            <!-- ============ INNER PAGES ============ -->
+            <div id="inner-pages" class="inner-pages">
+
+                <aside class="fixed-sidebar">
+                    <div class="profile-section">
+                        <div class="profile-img-wrapper">
+                            <img src="./img/me.jpeg" alt="Sourabh" class="profile-img">
+                        </div>
+                    </div>
+
+                    <div class="nav-arrow top" onclick="goPrevSection()">
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+
+                    <ul class="nav-menu">
+                        <li id="nav-home"><a href="#" onclick="showHome()">Home</a></li>
+                        <li id="nav-about"><a href="#" onclick="showInnerPage('about')">About Me</a></li>
+                        <li id="nav-education"><a href="#" onclick="showInnerPage('education')">Education</a></li>
+                        <li id="nav-projects"><a href="#" onclick="showInnerPage('projects')">Projects</a></li>
+                        <li id="nav-contact"><a href="#" onclick="showInnerPage('contact')">Contact</a></li>
+                    </ul>
+
+                    <div class="nav-arrow bottom" onclick="goNextSection()">
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+                </aside>
+
+                <div class="content-area">
+
+                    <!-- ============ ABOUT PAGE ============ -->
+                    <div id="about-page" class="content-page">
+                        <main class="about-content">
+                            <div class="page-title">
+                                <div class="dash"></div>
+                                <h2>About Me</h2>
+                            </div>
+
+                            <p class="intro-text">
+                                I'm <strong>Sourabh Diwakar</strong>, Print Design / Photographer
+                                <span class="desc">
+                                    About Me Hi, I'm Sourabh – a passionate BCA student from Ajmer with a strong interest in web development and programming. I have experience working with C, HTML, CSS, and Python. Currently, I'm learning JavaScript to enhance my skills and become a full-stack developer. I believe in continuous learning and enjoy building projects that solve real-world problems.
+                                </span>
+                            </p>
+
+                            <div class="two-columns">
+                                <div class="what-i-do">
+                                    <h3 class="column-title">What I Do?</h3>
+
+                                    <div class="service-item">
+                                        <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+                                        <div class="service-text">
+                                            <h4>Print Design</h4>
+                                            <p>Print Design is the process of creating visual designs for physical printing on paper or other materials. It is used for posters, brochures, business cards, banners, and magazines.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="service-item">
+                                        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                                        <div class="service-text">
+                                            <h4>Web Design</h4>
+                                            <p>Web Design is the process of creating the layout and appearance of websites. It uses HTML, CSS, and JavaScript to make websites attractive and user-friendly.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="service-item">
+                                        <div class="service-icon"><i class="fas fa-camera"></i></div>
+                                        <div class="service-text">
+                                            <h4>Photography</h4>
+                                            <p>Photography is the art of capturing images using a camera. It is used to create photos for memories, advertising, websites, and social media.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="fun-facts">
+                                    <h3 class="column-title">Fun Facts</h3>
+
+                                    <div class="facts-grid">
+                                        <div class="fact-circle">
+                                            <span class="label">Web <br>Designing</span>
+                                        </div>
+                                        <div class="fact-circle">
+                                            <span class="label">Coding</span>
+                                        </div>
+                                        <div class="fact-circle">
+                                            <span class="label">Photography</span>
+                                        </div>
+                                        <div class="fact-circle">
+                                            <span class="label">Music <br>Listening</span>
+                                        </div>
+                                        <div class="fact-circle">
+                                            <span class="label">Cycling</span>
+                                        </div>
+                                        <div class="fact-circle">
+                                            <span class="label">Learning <br>New<br> Technologies</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+
+                    <!-- ============ EDUCATION PAGE ============ -->
+                    <div id="education-page" class="content-page">
+                        <main class="education-content">
+                            <div class="page-title">
+                                <div class="dash"></div>
+                                <h2>Education</h2>
+                            </div>
+
+                            <p class="intro-text">
+                                My <strong>Education</strong> Journey
+                                <span class="desc">
+                                    A complete overview of my academic background and educational qualifications that shaped my journey as a developer.
+                                </span>
+                            </p>
+
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="dot"></div>
+                                    <span class="date">2024 - 2026</span>
+                                    <h4>Bachelor of Computer Applications (BCA)</h4>
+                                    <h5>Star Infotech College, Ajmer</h5>
+                                    <p>I am currently pursuing a Bachelor of Computer Applications (BCA). I am learning programming, web development, databases, and computer fundamentals. My course is helping me develop technical and problem-solving skills. I enjoy learning new technologies and improving my practical knowledge through projects. I am focused on building a strong foundation for a successful career in the IT field.</p>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="dot"></div>
+                                    <span class="date">2023 - 2024</span>
+                                    <h4>Senior Secondary (12th Grade)</h4>
+                                    <h5>RBSE Board, Rajasthan</h5>
+                                    <p>I completed my 12th in Commerce from a recognized board. During my studies, I learned Accountancy, Business Studies, Economics, and English. This helped me build a strong understanding of commerce and business concepts. I also developed analytical, communication, and problem-solving skills. My 12th education has provided a solid foundation for my higher studies and future career.</p>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="dot"></div>
+                                    <span class="date">2021 - 2022</span>
+                                    <h4>Secondary (10th Grade)</h4>
+                                    <h5>CBSE Board</h5>
+                                    <p>I completed my 10th from the CBSE Board. During my school education, I developed a strong foundation in core subjects such as Mathematics, Science, English, and Social Science. I improved my communication and problem-solving skills through academics and school activities. My 10th education helped me build discipline and confidence for higher studies. It provided a solid base for my future learning and career growth.</p>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+
+                    <!-- ============ PROJECTS PAGE ============ -->
+                    <div id="projects-page" class="content-page">
+                        <main class="projects-content">
+                            <div class="page-title">
+                                <div class="dash"></div>
+                                <h2>My Projects</h2>
+                            </div>
+
+                            <p class="intro-text">
+                                My <strong>Projects</strong> Showcase
+                                <span class="desc">
+                                    Here are some of the projects I have worked on during my learning journey. Each project reflects my skills and passion for development.
+                                </span>
+                            </p>
+
+                            <div class="projects-grid">
+                     
+                                <div class="project-card">
+                                    <div class="project-image">
+                                        <img src="./img/word.png">
+                                        <div class="project-num">01</div>
+                                    </div>
+                                    <div class="project-body">
+                                        <h3>WordPress Project</h3>
+                                        <p>A stunning, fully responsive travel agency landing page built with HTML, CSS, and JavaScript featuring smooth scroll navigation, destination cards, trip search, and a modern glassmorphic design.</p>
+                                        <a href="https://thelucky.blog/" target="_blank" class="project-link">Live Demo<i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div> 
+
+                                 <div class="project-card">
+                                    <div class="project-image">
+                                        <img src="./img/live.png">
+                                        <div class="project-num">02</div>
+                                    </div>
+                                    <div class="project-body">
+                                        <h3>Responsive Portfolio</h3>
+                                        <p>In this project, I have built my personal portfolio website that showcases information about me, my education, skills, and hobbies. The website is developed using HTML, CSS, and JavaScript, and it is fully responsive, meaning it looks good on both mobile and desktop devices. I have displayed my skills such as HTML, CSS, Bootstrap.</p>
+                                        <div class="project-tags">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                        </div>
+                                        <a href="https://diwakarsourabh08.github.io/Profile/" target="_blank" class="project-link">Live Demo<i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+
+                    <!-- ============ CONTACT PAGE ============ -->
+                    <div id="contact-page" class="content-page">
+                        <main class="contact-content">
+                            <div class="page-title">
+                                <div class="dash"></div>
+                                <h2>Contact</h2>
+                            </div>
+
+                            <p class="intro-text">
+                                Feel free to <strong>contact me!</strong>
+                                <span class="desc">
+                                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                                </span>
+                            </p>
+
+                            <div class="contact-cards">
+                                <div class="contact-card">
+                                    <div class="contact-card-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <h4>Email</h4>
+                                    <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=mddiwaker78@gmail.com" target="_blank">mddiwaker78@gmail.com</a></p>
+                                </div>
+
+                                <div class="contact-card">
+                                    <div class="contact-card-icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:+917737340132">+91 7737340132</a></p>
+                                </div>
+
+                                <div class="contact-card">
+                                    <div class="contact-card-icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                    <h4>Social Media</h4>
+                                    <p><a href="https://www.instagram.com/lucky._.diwakar._.6033" target="_blank">lucky._.diwakar._.6033</a></p>
+                                </div>
+                            </div>
+
+                            <div class="thanks-text">Thanks for Patience!</div>
+                        </main>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // ============ NAVIGATION CODE ============
+        let currentSection = 'home';
+
+        const sectionOrder = [
+            'home',
+            'about',
+            'education',
+            'projects',
+            'contact'
+        ];
+
+        function showHome() {
+            currentSection = 'home';
+            document.getElementById('home-section').classList.remove('hidden');
+            document.getElementById('inner-pages').classList.remove('active');
+        }
+
+        function showInnerPage(pageId) {
+            currentSection = pageId;
+            document.getElementById('home-section').classList.add('hidden');
+            document.getElementById('inner-pages').classList.add('active');
+
+            const pages = document.querySelectorAll('.content-page');
+            pages.forEach(page => page.classList.remove('active'));
+
+            const selectedPage = document.getElementById(pageId + '-page');
+            if (selectedPage) {
+                selectedPage.classList.add('active');
+            }
+
+            const navItems = document.querySelectorAll('.nav-menu li');
+            navItems.forEach(item => item.classList.remove('active'));
+
+            if (pageId === 'about') {
+                document.getElementById('nav-about').classList.add('active');
+            } else if (pageId === 'education') {
+                document.getElementById('nav-education').classList.add('active');
+            } else if (pageId === 'projects') {
+                document.getElementById('nav-projects').classList.add('active');
+            } else if (pageId === 'contact') {
+                document.getElementById('nav-contact').classList.add('active');
+            }
+        }
+
+        function goPrevSection() {
+            const currentIndex = sectionOrder.indexOf(currentSection);
+            if (currentIndex > 0) {
+                const prevSection = sectionOrder[currentIndex - 1];
+                if (prevSection === 'home') {
+                    showHome();
+                } else {
+                    showInnerPage(prevSection);
+                }
+            }
+        }
+
+        function goNextSection() {
+            const currentIndex = sectionOrder.indexOf(currentSection);
+            if (currentIndex < sectionOrder.length - 1) {
+                const nextSection = sectionOrder[currentIndex + 1];
+                if (nextSection === 'home') {
+                    showHome();
+                } else {
+                    showInnerPage(nextSection);
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
